@@ -1,0 +1,65 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Tracker</h1>
+        <div id="timer-display">25:00</div>
+        <button id="start-button">Start</button>
+        <button id="stop-button">Stop</button>
+        <button id="reset-button">Reset</button>
+        <h2>Statistics</h2>
+        <div id="statistics">
+            <p>Total Pomodoros: <span id="total-pomodoros">0</span></p>
+            <p>Total Time: <span id="total-time">0</span> minutes</p>
+            <p>Average Duration: <span id="average-duration">0</span> minutes</p>
+        </div>
+        <h2>Start Times</h2>
+        <ul id="start-times"></ul>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Tracker</h1>
+        <input type="text" id="task-input" placeholder="Enter your task">
+        <div>
+            <input type="number" id="hours-input" placeholder="HH" value="0" min="0" max="23">
+            <input type="number" id="minutes-input" placeholder="MM" value="25" min="0" max="59">
+        </div>
+        <div id="timer-display">00:25:00</div>
+        <button id="start-button">Start</button>
+        <button id="stop-button">Stop</button>
+        <button id="reset-button">Reset</button>
+        <h2>Statistics</h2>
+        <div id="statistics">
+            <p>Total Pomodoros: <span id="total-pomodoros">0</span></p>
+            <p>Total Time: <span id="total-time">0</span> minutes</p>
+            <p>Average Duration: <span id="average-duration">0</span> minutes</p>
+        </div>
+        <h2>Weekly Statistics</h2>
+        <canvas id="weeklyChart"></canvas>
+        <h2>Monthly Statistics</h2>
+        <canvas id="monthlyChart"></canvas>
+        <h2>Start Times</h2>
+        <ul id="start-times"></ul>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
